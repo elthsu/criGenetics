@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.tracker-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.tracker, .add-tracker {
+  height: 300px;
+  width: calc(50% - 40px);
+  min-width: 300px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.routes {
+  align-self: center;
+  justify-content: flex-start;
+  margin: 10px 20px;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.add-tracker .routes div{
+  width: 100px;
+  float: left;
+  margin-right: 30px;
+}
+
+.tracker-container .routes div{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.routes input{
+  width: 200px;
+}
+
+.add-tracker button{
+  margin-top: 20px;
+}
+
