@@ -17,13 +17,15 @@ function Two () {
 
     axios.post('/click', {url: window.location.href, userId, sessionId}).then(res=>{
       localStorage.setItem("cri_genetics_campaign", res.data)
-      window.location.replace(res.data)
+      if(window.location.href !== res.data){
+        window.location.replace(res.data)
+      }
     })
     //script end - replace '/click' with 'host.com/click'
   }, [])
 
   return (
-    <div></div>
+    <div>Two</div>
   )
 }
 
