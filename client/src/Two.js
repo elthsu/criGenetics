@@ -5,6 +5,7 @@ import axios from 'axios';
 
 function Two () {
   useEffect(()=>{
+    //script start
     let userId = localStorage.getItem("cri_genetics_userId")
     if(!userId){
       userId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
@@ -18,6 +19,7 @@ function Two () {
       localStorage.setItem("cri_genetics_campaign", res.data)
       window.location.replace(res.data)
     })
+    //script end - replace '/click' with 'host.com/click'
   }, [])
 
   return (
